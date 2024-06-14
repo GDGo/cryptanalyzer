@@ -5,7 +5,6 @@ import com.javarush.cryptanalyzer.goncharov.exception.ApplicationException;
 import java.io.*;
 
 import static com.javarush.cryptanalyzer.goncharov.constants.ApplicationCompletionConstants.*;
-import static com.javarush.cryptanalyzer.goncharov.constants.ApplicationCompletionConstants.MESSAGE_ERROR_ENCODE;
 import static com.javarush.cryptanalyzer.goncharov.constants.CryptoAlphabet.ALPHABET;
 import static com.javarush.cryptanalyzer.goncharov.services.PathUtilsFunc.*;
 import static com.javarush.cryptanalyzer.goncharov.services.UtilsFunc.getShiftKey;
@@ -14,7 +13,7 @@ public class Decode {
     public static void decode(){
         int key = getShiftKey(MESSAGE_KEY);
         String inputFile = getInputFileDecode(MESSAGE_OUT);
-        String outputFileFile = getOutputFileDecode(MESSAGEIN_ENCODED);
+        String outputFileFile = getOutputFileDecode(MESSAGE_IN_ENCODED);
 
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileFile))){
