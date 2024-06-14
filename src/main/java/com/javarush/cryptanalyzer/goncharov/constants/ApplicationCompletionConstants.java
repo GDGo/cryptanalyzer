@@ -2,7 +2,7 @@ package com.javarush.cryptanalyzer.goncharov.constants;
 
 public class ApplicationCompletionConstants {
 
-//    public static final String SUCCESS = "Выполнение приложения завершилось успешно";
+    public static final String SUCCESS = "Выполнение приложения завершилось успешно";
     public static final String EXCEPTION = "Выполнение приложения завершилось с ошибкой";
     public static final String MESSAGE_IN =
             "Введите путь к исходному файлу или нажмите Enter, чтобы воспользоваться демонстрационным файлом :\n" +
