@@ -30,7 +30,7 @@ public class UtilsFunc {
     }
 
     public static int getRandomKey(){
-        int key = ThreadLocalRandom.current().nextInt(0, ALPHABET_LENGTH + 1);
+        int key = ThreadLocalRandom.current().nextInt(1, (ALPHABET_LENGTH + 1) / 2);
         System.out.println(MESSAGE_KEY_GENERATED + key);
         return key;
     }
