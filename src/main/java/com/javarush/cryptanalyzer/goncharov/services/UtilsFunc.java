@@ -15,7 +15,7 @@ public class UtilsFunc {
         while (true){
             System.out.println(message);
             input = in.nextLine();
-            if (input.equals("1") || input.equals("2")){
+            if (input.equals("1") || input.equals("2") || input.equals("3")){
                 return Integer.parseInt(input);
             } else if (input.equals("End".toLowerCase())) {
                 close();

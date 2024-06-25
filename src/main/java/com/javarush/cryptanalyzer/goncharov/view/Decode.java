@@ -29,7 +29,7 @@ public class Decode {
         System.out.println(SUCCESS);
     }
 
-    private static String encodeText(String string, int shift){
+    public static String encodeText(String string, int shift){
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < string.length(); i++) {
             builder.append(symbolDecode(string.charAt(i), shift));
